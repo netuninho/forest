@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rounded | Display</title>
+    <link href="./output.css" rel="stylesheet" />
+</head>
+<body class="m-8">
+    <div class="text-center mb-6">
+        <a href="#principal" class="sr-only focus:not-sr-only">Pular para o conteúdo</a>
+    </div>
+
+    <section class="flex flex-col items-center">
+        <div class="flex flex-wrap gap-8">
+            <button class="rounded-e-xl bg-orange-300 border-purple-300 px-4 py-2 mb-4">
+                Comprar Produto
+            </button>
+        
+            <div class="rounded-full bg-pink-500 size-8"></div>
+        
+            <button class="rounded-tr-xl rounded-bl-xl bg-orange-300 border-purple-300 px-4 py-2 mb-4">
+                Comprar Produto
+            </button>
+        
+            <div class="rounded-full bg-cyan-500 size-8"></div>
+        
+            <button class="rounded-s-xl bg-orange-300 border-purple-300 px-4 py-2 mb-4">
+                Comprar Produto
+            </button>
+        </div>
+    
+        <p class="bg-green-300 max-w-[300px] text-center p-4 rounded-3xl">Meu texto</p>
+    </section>
+
+    <section>
+        <a class="bg-blue-200 py-2 px-4 inline-block" href="#">Contato</a>
+        <a class="bg-blue-200 py-2 px-4 block" href="">Sobre</a>
+        <p class="bg-purple-200 py-2 px-4">Saiba Mais</p>
+
+        <div class="flex justify-center items-baseline gap-3">
+            <p id="text" class="hidden mt-4">Você não me vê</p>
+            <button id="btn" class="bg-purple-300 px-4 py-2 mt-8 rounded-3xl">Click Aqui</button>
+        </div>
+
+        <p id="principal">O site do governo do Reino Unido é um grande exemplo de acessibilidade</p>
+
+        <script>
+            btn?.addEventListener('click', () => {
+                text?.classList.toggle('hidden');
+            });
+        </script>
+    </section>
+</body>
