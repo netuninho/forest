@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <link href="./output.css" rel="stylesheet" />
+</head>
+<body class="m-8">
+    <ul class="flex gap-2 *:p-2 *:rounded *:text-center *:cursor-pointer *:flex-auto flex-wrap">
+        <li class="bg-lime-300">HTML</li>
+        <li class="bg-pink-300">CSS</li>
+        <li class="bg-orange-300">PHP</li>
+        <li class="bg-purple-300">React</li>
+        <li class="bg-blue-300">Javascript</li>
+    </ul>
+
+    <section class="place-content-center mt-10 grid grid-cols-[auto_auto] gap-4 h-96">
+        <div class="bg-red-400 p-8 rounded">
+            <h2 class="font-bold mb-4 text-white">Plano Premium</h2>
+            <ul class="text-white list-disc">
+                <li>300 Acessos</li>
+                <li>1200 Requests</li>
+                <li>Acesso Completo</li>
+                <li>Proteção Total</li>
+                <li>Suporte Vitalício</li>
+            </ul>
+
+            <button class="bg-red-200 py-1 px-4 rounded mt-4 text-red-500">Assinar Premium</button>
+        </div>
+
+        <div class="bg-red-400 p-8 rounded">
+            <h2 class="font-bold mb-4 text-white">Plano Básico</h2>
+            <ul class="text-white list-disc">
+                <li>150 Acessos</li>
+                <li>500 Requests</li>
+            </ul>
+
+            <button class="bg-red-200 py-1 px-4 rounded mt-4 text-red-500">Assinar Básico</button>
+        </div>
+    </section>
+</body>
+</html>
